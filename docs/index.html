@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+            
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+.border-gray-300{
+    border:solid 1px;
+  }
+  .button{
+   background-color:#E67800;
+  }
+  </style>
+<script>
+    $("input:checkbox[id='checkbox']").prop("checked", true); /* 선택 */
+$(".ch1").attr("checked", false); /* 해제 */
+</script>
+</head>
+<body>
+    <div id="root">
+        <div class="min-h-screen bg-gray-50">
+        <div class="flex justify-center">
+          <div class="py-12 my-16 bg-white rounded-lg p-20">
+          <div class=" mb-14 lg:mb-11"><a href="https://p.crmmii.com"><img src="https://auth.projectlion.io/static/img/projectlion_logo.svg" alt="" style="height: 28px;"></a></div><h2 class="text-xl font-bold">회원가입</h2>
+          <form>
+            <div class="mt-6 lg:mt-8"><div><label class="inline-block text-xs lg:text-sm mb-2">이름</label><input type="text" name="name" class="rounded-lg border border-gray-300 block w-full py-3 px-4  text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:border-gray-600 focus:ring-0" placeholder="이름을 알려주세요" required="" value=""><label class="inline-block text-xs lg:text-sm mb-2  mt-6 lg:mt-8">아이디</label><input type="text" name="email" class="border-gray-300 focus:border-gray-600 rounded-lg block w-full py-3 px-4 text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:ring-0" placeholder="likelion@gmail.com" required="" value=""><label class="inline-block text-xs lg:text-sm mb-2  mt-6 lg:mt-8">휴대폰 번호</label><div class="flex space-x-2"><div class="w-full"><input type="tel" name="phone" class="border-gray-300 focus:border-gray-600 block w-full rounded-lg  py-3 px-4 text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:ring-0" placeholder="-없이 숫자만 입력해주세요." required="" value=""></div><button type="button" class="flex-shrink-0 py-3 px-4
+                                                  border border-yellow-450 rounded-lg
+                                                  text-yellow-450 flex items-center
+                                                  justify-center"><span class="text-sm font-semibold">인증하기</span></button></div><div class="flex space-x-2 mt-2"><div class="relative"><input type="text" name="pin" autocomplete="one-time-code" class="border-gray-300 focus:border-gray-600 block border-gray-300 rounded-lg  py-3 px-4 text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:border-gray-600 focus:ring-0" readonly="" value=""></div>
+            <button type="button" class=" button bg-opacity-50 cursor-not-allowed flex-shrink-0 py-3 px-4 bg-yellow-450 rounded-lg text-white flex items-center justify-center" disabled=""><span class="text-sm font-semibold">인증번호 확인</span></button>
+              
+            </div><ul class="mt-2 text-gray-500 text-sm "></ul><label class="inline-block text-xs lg:text-sm mb-2 mt-6 lg:mt-8">비밀번호</label><input type="password" name="password" class="rounded-lg border-gray-300 block w-full  py-3 px-4 text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:border-gray-600 focus:ring-0" placeholder="비밀번호를 입력해주세요" required="" value=""><label class="inline-block text-xs lg:text-sm mb-2 mt-6 lg:mt-8">비밀번호 확인</label><input type="password" name="password2" class="rounded-lg border-gray-300 block w-full py-3 px-4 text-xs lg:text-sm placeholder-gray-300 focus:outline-none focus:border-gray-600 focus:ring-0" placeholder="비밀번호를 다시 한 번 입력해주세요" required="" value="">
+            </div>
+              <div class="mt-16 flex items-center">
+              <input type="checkbox" id="checkbox" class="border-gray-500 rounded border-2 text-yellow-450 checked:bg-yellow-450 checked:border-transparent focus:outline-none focus:ring-transparent ch1" style="width: 18px; height: 18px;">
+              <span class="inline-block ml-2 text-xl font-bold">전체동의</span></div></div><hr class=" mt-4 mb-10">
+            <div>
+              <ul class="space-y-2">
+                <li class="flex items-center"> <input type="checkbox" class="border-gray-500 rounded border-2 appearance-none text-yellow-450 checked:bg-yellow-450 checked:border-transparent focus:outline-none focus:ring-transparent" style="width: 18px; height: 18px;"><span class="inline-block mx-2 text-base text-gray-700">서비스 이용약관 동의 (필수)</span><a href="https://likelion.notion.site/PROJECT-LION-89ba1354b98d4825af14109aebdd3af9" class="flex text-gray-400 space-x-2 text-base items-center" target="_blank" rel="noopener noreferrer nofollow">상세보기<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-auto rightarrow"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                <li class="flex items-center"> <input type="checkbox" class="border-gray-500 rounded border-2 appearance-none text-yellow-450 checked:bg-yellow-450 checked:border-transparent focus:outline-none focus:ring-transparent" style="width: 18px; height: 18px;"><span class="inline-block mx-2 text-base text-gray-700">개인정보 수집 및 이용 동의 (필수)</span><a href="https://likelion.notion.site/PROJECT-LION-f302dd92322a467c905e792729aee66e" class="flex text-gray-400 space-x-2 text-base items-center" target="_blank" rel="noopener noreferrer nofollow">상세보기<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-auto rightarrow"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                <li class="flex items-center"> <input type="checkbox" class="border-gray-500 rounded border-2 appearance-none text-yellow-450 checked:bg-yellow-450 checked:border-transparent focus:outline-none focus:ring-transparent" style="width: 18px; height: 18px;"><span class="inline-block mx-2 text-base text-gray-700">만 14세 이상입니다 (필수)</span></li>
+                <li class="flex items-center"> <input type="checkbox" class="border-gray-500 rounded border-2 appearance-none text-yellow-450 checked:bg-yellow-450 checked:border-transparent focus:outline-none focus:ring-transparent" style="width: 18px; height: 18px;"><span class="inline-block mx-2 text-base text-gray-700">광고성 정보 수신 동의 (선택)</span></li>    
+                </ul>
+              <div class="mt-16">
+                <button class="flex justify-center py-3 items-center w-full rounded-lg bg-yellow-450 bg-opacity-50 cursor-not-allowed" type="button" disabled=""><span class="text-white text-sm font-semibold">확인</span></button>
+                </div>
+                </div>
+                </form>
+          <form method="post"><input type="text" name="name" hidden="" readonly="" value=""><input type="text" name="email" hidden="" readonly="" value=""><input type="text" name="phone_no" hidden="" readonly="" value=""><input type="text" name="token" hidden="" readonly="" value=""><input type="text" name="pin" hidden="" readonly="" value=""><input type="text" name="password" hidden="" readonly="" value=""><input name="marketing_service_agreement" type="text" hidden="" readonly="" value="false"></form>   
+          </div>
+          </div>
+          </div>
+          </div>
+</body>
+</html>
